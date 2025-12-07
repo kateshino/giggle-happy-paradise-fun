@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: #141414;
+	background-image: url("../assets/cio60522.jpg");
 }
 
 #container {
@@ -62,13 +62,13 @@ main {
 }
 
 
-ul {
+nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-li a {
+nav ul li a {
 	text-align: center;
 	display: block;
 	padding: 31px;
@@ -76,7 +76,7 @@ li a {
 	color: #5e5e5e;
 }
 
-li a:hover {
+nav ul li a:hover {
 	background-color: #5e5e5e;
 	color: #141414;
 }
@@ -91,8 +91,9 @@ li a:hover {
 }
 
 article {
+    display: none;
     border: 1px solid black;
-    margin: 15px 5px 0px 25px;
+    margin: 0px 5px 0px 25px;
     padding: 0px 2px;
     overflow: hidden;
 }
@@ -103,4 +104,22 @@ article h2 {
 
 article p {
     padding: 0 0 0 10px;
+}
+
+.dropdown {
+    border: 1px solid black;
+    margin: 15px 5px 0px 25px;
+    padding: 0px 2px 2px 0px;
+    overflow: hidden;
+    height: 15px;
+	background-color: #bfbfbf;
+	color: #141414;
+}
+
+.dropdown:focus + article {
+    display: block;
+}
+
+#first {
+    display: block;
 }
